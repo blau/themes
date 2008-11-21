@@ -1,0 +1,54 @@
+<?php
+function sample_menu() {
+    $menu = '<div id="menu"><ul>';
+    if ( is_home() ) {
+        $menu .= '<li class="current_page_item"><a href="';
+    }
+    else {
+         $menu .= '<li><a href="';
+    }
+    $menu .= get_option('home') . '/" title="Home">Home</li>';
+    $menu .= str_replace( array( "\r", "\n", "\t" ), '', wp_list_pages('title_li=&sort_column=menu_order&echo=0') );
+    $menu .= "</ul></div>\n";
+    echo $menu;
+    }
+add_filter('sandbox_menu', 'sample_menu' );
+
+// My Design
+// Version 0.1
+
+function header_mytheme() { // PUTS STUFF IN THE HEADER ?>
+        <script src="<?php echo bloginfo('stylesheet_directory') ?>/js/scottyScripts.js" type="text/javascript"></script>
+
+<?php } // END header_mytheme
+
+function footer_mytheme() { // PUTS STUFF IN THE FOOTER ?>
+
+        <div id="design-link" class="column span-24"><a href="http://www.example.com/" title="My Design by Me">L'ho messo io questo da functions</a></div>
+
+<?php } // END footer_mytheme
+
+add_action('wp_head', 'header_mytheme');
+// add_action('wp_head', wp_enqueue_script('jquery')); // ADDS JQUERY TO THE HEADER
+add_action('wp_footer', 'footer_mytheme');
+
+function zero_sidebar() { ?>
+	<div id="zero" class="sidebar">
+		<div id=zerobox>
+			<div class="zero-content">
+				<div class="zero-content-left">
+				<p>todo aggiustare div o functions per riportare il background nei daikos box Iscriviti al <a href="<?php bloginfo('rss2_url') ?>" alt="iscriviti al feed RSS" title="iscriviti al feed RSS">feed</a> degli articoli (<a href="http://www.nazioneindiana.com/netiquette/iscriviti/">cos'&egrave;?</a>)
+				</div>
+				<div class="zero-content-right">			
+				<a href="<?php bloginfo('rss2_url') ?>" alt="iscriviti al feed RSS" title="iscriviti al feed RSS"><img src="wp-content/themes/dev/img/feed-icon-32x32.png"></a>
+				</div>
+			</div>
+		</div> 
+        </div><!-- #zero -->
+
+
+<?php }
+add_action('get_sidebar', 'zero_sidebar');
+
+
+?>

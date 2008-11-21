@@ -1,0 +1,89 @@
+/*
+Theme Name: Dev Theme
+Theme URI: http://nazioneindiana.com
+Description: test con sandbox e blueprint-css
+Author: jan
+Author URI: http://mauta.net/
+Template: sandbox
+Version: 0.1
+.
+This work, like WordPress, is released under GNU General Public License, version 2 (GPL).
+http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+.
+*/
+/*andare a vedere blueprint/lib/compress.rb per custom css elements eccetera*/ 
+@import url('../sandbox/style.css');
+@import url('blueprint/screen.css');
+
+
+#header {
+}
+
+#wrapper {
+border: thin solid;
+/*l'immagine va scalata alla fine sulla base della tipografia header, sta in qui x scendere sotto a menu */
+background: url('img/logotipo_edo_100.png') no-repeat top right;
+}
+
+div#menu {
+border-bottom: thin solid;
+background: none;
+}
+
+div#content {
+padding-left: 10px;
+}
+
+/*inizio ad immettere roba kubrick */
+
+h1 { font-weight: bold; text-transform: uppercase; letter-spacing: .1em; padding-top: 10px; }
+
+h1 a, h1 a:focus, h1 a:hover { color: #000; }
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 { font-family: Garamond, 'Copperplate Gothic Light', Georgia, 'Times New Roman', Serif; }
+
+h2 a,
+h3 a, 
+h4 a { color: #000; }
+ 
+h2 a:focus, 
+h2 a:hover, 
+h3 a:focus, 
+h3 a:hover, 
+h4 a:focus, 
+h4 a:hover {color: #06c; }
+
+h3 { font-weight: bold; }
+
+a { text-decoration: none; color: #06c }
+
+abbr { color: #777 }
+
+#content .post { border-bottom: thin solid black; margin-bottom: 10px }
+
+
+/* fine kubrick*/
+
+#daikos-text-1 { padding-left: 10px; padding-right: 10px;  background: #98FB98; }
+
+#daikos-text-2 { padding-left: 10px; padding-right: 10px;  background: #ffa500; }
+
+#daikos-text-3 { padding-left: 10px; padding-right: 10px;  background: #4169E1; }
+
+#daikos-text-4 { padding-left: 10px; padding-right: 10px;  background: #ff6347; }
+
+#daikos-text-5 { padding-left: 10px; padding-right: 10px;  background: #98FB98; }
+
+#rss-278803201 {  padding-left: 10px; padding-right: 10px; list-style-type: none; background: #d2b48c }
+
+
+.DaikosText .widgettitle { padding-bottom: 5px; border-bottom: solid thin #777; }
+
+
+#f5f5f5
+/*div.category-examples { display: none; }*/
