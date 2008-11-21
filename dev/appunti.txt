@@ -1,3 +1,37 @@
+Attenzione:
+==========
+Il framework blueprint-css usato qui è stato modificato con blueprint-css/lib/compress.rb (non incluso qui, vedi http://github.com/joshuaclayton/blueprint-css/) per aggarciarvi le div base di sandbox.
+
+doc/widget.txt 
+--------------
+contiene codice php per daikos text widget 1-9 usato nei box delle sidebar, in stato di aggiornamento +/-.
+
+style.css
+---------
+dove avviene quasi tutto il css non definito in blueprint
+
+blueprint
+---------
+gli script sono compressi e custom
+
+functions.php
+-------------
+personalizza la logica e inserisce cose nuove
+
+
+js
+--
+contiene roba jquery per il gridtoggle ancora non completato, vedi anche calla  jquery in init (functions.php)
+
+
+
+
+Qui sotto vecchia roba da functions.php che prima o poi cancello
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+-----------------------------------------------------------------
 <?php
 function sample_menu() {
     $menu = '<div id="menu"><ul>';
