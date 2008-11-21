@@ -1,0 +1,18 @@
+/*
+Theme Name: Bare Blueprint Sandbox Theme
+Theme URI: none
+Description: tema nudo sandbox usando la griglia di blueprint-css
+Author: blau
+Author URI: http://mauta.net/
+Template: sandbox
+Version: 0.1
+.
+This work, like WordPress, is released under GNU General Public License, version 2 (GPL).
+http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+.
+*/
+/*andare a vedere blueprint/lib/compress.rb per custom css elements eccetera*/ 
+@import url('../sandbox/style.css');
+@import url('blueprint/screen.css');
+
+
