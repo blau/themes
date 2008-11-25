@@ -255,7 +255,7 @@ div#wrapper {float:left;margin-right:10px;margin-top:1.5em;margin-bottom:1.5em;d
 body {width:950px;margin:0 auto;display:block;}
 div#header {width:950px;margin:0;}
 div#container {float:left;margin-right:10px;width:470px;}
-div#secondary {margin-right:0;padding-right:0;float:left;margin-right:10px;margin-right:0;width:150px;}
+div#secondary {float:left;margin-right:10px;margin-right:0;width:150px;}
 div#footer {float:left;margin-right:10px;width:950px;margin:0;}
 div#zero {margin-right:0;padding-right:0;float:left;margin-right:10px;margin-right:0;width:470px;}
 div#primary {float:left;margin-right:10px;width:310px;}

@@ -1,8 +1,8 @@
 <?php
 
-function header_blueprint() { // PUTS STUFF IN THE HEADER ?>
-        <link rel="stylesheet" href="<?php bloginfo("wpurl"); ?>/wp-content/blueprint/print.css" type="text/css" media="print" />
-        <!--[if IE]><link rel="stylesheet" href="<?php bloginfo("wpurl"); ?>/wp-content/blueprint/ie.css" type="text/css" media="screen, projection" /><![endif]-->  
+function header_blueprint() { // PUTS STUFF IN THE HEADER theme name is hardcoded ?>
+        <link rel="stylesheet" href="<?php bloginfo("wpurl"); ?>/wp-content/themes/dev/blueprint/print.css" type="text/css" media="print" />
+        <!--[if IE]><link rel="stylesheet" href="<?php bloginfo("wpurl"); ?>/wp-content/themes/dev/blueprint/ie.css" type="text/css" media="screen, projection" /><![endif]-->  
 
 <?php } // END header_blueprint
 
