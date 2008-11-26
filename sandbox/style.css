@@ -9,9 +9,12 @@ TAGS: sandbox, microformats, hcard, hatom, xoxo, widgets, blank slate, starter t
 */
 
 /* Two-column with sidebar on left from the /examples/ folder  */
-/*@import url('examples/3c-r.css');*/
+/* I don't use the example column layout
+@import url('examples/3c-r.css');
+*/
 
 /* Just some example content */
+/* I don't use the example style
 div.skip-link {
 position:absolute;
 right:1em;
@@ -214,3 +217,4 @@ div.gallery *,div.sidebar div,div.sidebar h3,div.sidebar ul {
 margin:0;
 padding:0;
 }
+*/
