@@ -1,0 +1,5 @@
+# file da non seguire con git:
+# le dir di subversion che vanno in conflitto con svn su dreamhost che ha una versione vecchia
+.svn
+# file temporanei
+*.swp
