@@ -15,7 +15,7 @@ function sandbox_globalnav_home() {
     else {
          $menu .= '<li><a href="';
     }
-    $menu .= get_option('home') . '/" title="Home">Home</li>';
+    $menu .= get_option('home') . '/" title="Home">Home</a></li>';
     $menu .= str_replace( array( "\r", "\n", "\t" ), '', wp_list_pages('title_li=&sort_column=menu_order&echo=0') );
     $menu .= "</ul></div>\n";
     echo $menu;
