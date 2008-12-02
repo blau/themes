@@ -12,7 +12,6 @@ http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 .
 */
 /*andare a vedere blueprint/lib/compress.rb per custom css elements eccetera*/ 
-@import url('../sandbox/style.css');
 @import url('blueprint/screen.css');
 
 
